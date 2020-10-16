@@ -4,18 +4,12 @@ using namespace std;
 int arr[v];
 
 bool cmp(pair<int,int> x,pair<int,int> y){
-
-    
-
     return x.second<y.second;
-    
 }
 
 int find(int x){
-
     if(arr[x]==-1)
         return x;
-    
     return find(arr[x]);
 }
 
@@ -99,7 +93,7 @@ void printmst(vector<pair<int,int>> lst)
     }
 }
 
-
+// main calling function for kruskals algorithm
 
 void krus(int g[v][v])
 {
@@ -133,7 +127,7 @@ void krus(int g[v][v])
     
 }
 
-
+// driver function 
 
 int main()
 {
