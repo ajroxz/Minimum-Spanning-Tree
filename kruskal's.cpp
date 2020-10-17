@@ -1,3 +1,4 @@
+// Implementation of kruskal's Algorithm
 #include<bits/stdc++.h>
 #define v 9
 using namespace std;
@@ -37,13 +38,8 @@ bool mkmst(int x,int y)
         arr[a]=b;
         
         return true;
-    }
-
-    
-
     
     return false;
-
     
 }
 
@@ -56,8 +52,7 @@ void printmst(vector<pair<int,int>> lst)
     
     for(itr=lst.begin();itr!=lst.end();itr++)
     {
-        
-        
+          
 
         if(itr->first%10==itr->first)
         {
@@ -70,7 +65,6 @@ void printmst(vector<pair<int,int>> lst)
                 continue;
             }
             
-
         }
         else
         {
@@ -87,9 +81,7 @@ void printmst(vector<pair<int,int>> lst)
             
             
         }
-        
-        
-        
+           
     }
 }
 
@@ -111,7 +103,6 @@ void krus(int g[v][v])
                 
             }
         }
-       
     }
     
 
@@ -122,9 +113,7 @@ void krus(int g[v][v])
     
     sort(set.begin(),set.end(),cmp);
     
-    printmst(set);
-
-    
+    printmst(set);  
 }
 
 // driver function 
